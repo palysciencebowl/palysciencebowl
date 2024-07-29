@@ -1,0 +1,104 @@
+nav {
+  position:static;width:100%;
+  background-color: #000;
+  display:flex;
+  flex-direction: column;
+  height: 37vw;
+  width:100%;
+  align-items: center;
+  border-bottom:1px solid rgb(255,255,255,1);
+}
+nav{
+  transition-duration: 0.4s;
+  transition-property: border-color;
+}
+nav > div {
+  width: 90%;
+  height: 9vw;
+  align-content: center;
+  text-align: center;
+  font-size: 6vw;
+}
+nav > div:hover {
+}
+nav > div > a {
+  align-content: center;
+}
+@media (min-width:700px) {
+  nav {
+    position:fixed;top:0;right:0;
+    background-color: #000;
+    display:flex;
+    flex-direction: row;
+    height: 6vw;
+    width:100vw;
+    align-items: center;
+  }
+  nav{
+    transition-duration: 0.4s;
+    transition-property: border-color;
+  }
+  nav{
+    border-bottom:1px solid rgb(255,255,255,0);
+  }
+  nav:hover{
+    border-bottom:1px solid rgb(255,255,255,.5);
+  }
+  nav > div {
+    width: 16vw;
+    height: 6vw;
+    align-content: center;
+    text-align: center;
+    font-size: 2.3vw;
+  }
+  nav > div > a {
+    transition-duration: 0.2s;
+    transition-property: color;
+  }
+  nav > div:hover {
+  }
+  nav > div > a {
+    align-content: center;
+  }
+}
+nav :link, nav :visited {
+  color:#fff;
+}
+
+
+body{
+  background-color:#000
+}
+a, p, h1{
+  font-family: Arial, sans-serif;
+  color:#fff
+}
+a{
+  text-decoration:none;
+}
+a:hover{
+  color:#0e6219;
+}
+p{font-size: 18px}
+h1{font-size:36px}
+.fullwidthtext{padding: 0px 12px 0px 12px;}
+.subtitle{padding: 20px 0px 0px 24px;}
+@media (min-width:700px) {
+  p{font-size: 20px}
+  h1{font-size:40px}
+  .fullwidthtext{padding: 0px 24px 0px 6px;}
+  .subtitle{padding: 2vw 0px 0px 24px;}
+}
+@media (min-width:1280px) {
+  p{font-size: 24px}
+  h1{font-size:60px}
+}
+
+div{
+  margin: 0;padding:0;
+}
+
+.hometitle{
+}
+.hometitle > div {
+}
