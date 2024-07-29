@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 <title>Paly SciBowl home</title>
-<base href="https://palysciencebowl.vercel.app" target="_self">
+<base href="https://palysciencebowl.vercel.app/">
 <link rel="icon" type="image/x-icon" href="images/PSBLogo.png">
 <link rel="stylesheet" href="styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@ function setSize() {
   var titleimage = document.getElementById('titleimage');
   var titleimagediv = document.getElementById('titleimagediv');
   var titletext = document.getElementById('titletext');
-  if(w>700){
+  if(w>768){
     if(h > (0.32*w)){
       hometitle.setAttribute('style', `font-family: "Arial", sans-serif;
       display:flex;
@@ -34,10 +34,10 @@ function setSize() {
       color:#fff;
       font-size: 7.5vw;
       word-spacing: 0vw;
-      vertical-align:top`);
-      titleimagediv.setAttribute('style', 'width:26%');
+      padding=0;`);
+      titleimagediv.setAttribute('style', 'width:26vw;');
       titleimage.setAttribute('style', 'width:26vw');
-      titletext.setAttribute('style', "width:62%;height:21vw;align-items:top");
+      titletext.setAttribute('style', "width:60%;height:21vw;");
     } else {
       hometitle.setAttribute('style', `font-family: "Arial", sans-serif;
       display:flex;
@@ -47,10 +47,10 @@ function setSize() {
       color:#fff;
       font-size: 7.5vw;
       word-spacing: 0vw;
-      vertical-align:top`);
-      titleimagediv.setAttribute('style', 'width:26%');
+      padding=0;`);
+      titleimagediv.setAttribute('style', 'width:26vw');
       titleimage.setAttribute('style', 'width:26vw');
-      titletext.setAttribute('style', "width:62%;height:21vw;align-items:top");
+      titletext.setAttribute('style', "width:60%;height:21vw;");
     }
   } else {
     hometitle.setAttribute('style', `font-family: "Arial", sans-serif;
@@ -60,7 +60,7 @@ function setSize() {
     align-items: center;
     color:#fff;
     font-size:12vw;
-    word-spacing: 0vw; `);
+    word-spacing: 0vw;`);
     titleimagediv.setAttribute('style', 'width:61%');
     titleimage.setAttribute('style', 'width:60vw');
     titletext.setAttribute('style', "width:82%;height:21vw;align-items:top");
@@ -82,7 +82,7 @@ function setSize() {
 <body onload="setSize()" onresize="setSize()">
 
 <div class="hometitle">
-  <div id="titleimagediv"> <img id="titleimage" src="images/PSBLogo.png" alt="PSBLogo" style="width:30vw"> </div>
+  <div id="titleimagediv"><img id="titleimage" src="images/PSBLogo.png" alt="PSBLogo" style="width:30vw"> </div>
   <div id="titletext" style="width:60%;height:21vw;">Paly Science Bowl</div>
 </div>
 
