@@ -69,11 +69,14 @@ nav > div > a {
     background:rgb(0,0,0,0);
   }
 
+  ::-webkit-scrollbar-track {
+    background:#111;
+  }
   ::-webkit-scrollbar-thumb {
     background:#222;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background:#111;
+    background:#000;
   }
 }
 nav :link, nav :visited {
