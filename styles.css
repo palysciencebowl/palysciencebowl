@@ -25,6 +25,7 @@ nav > div > a {
 }
 ::-webkit-scrollbar {
   appearance: none;
+  width: 0;
 }
 @media (min-width:700px) {
   nav {
