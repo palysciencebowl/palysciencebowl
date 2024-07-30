@@ -1,0 +1,161 @@
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding-bottom: 5vh;
+}
+
+.content {
+  padding-bottom: 3rem;
+  font-family: 'Times', sans-serif;
+}
+
+.navbar {
+  font-family: Monospace;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: fixed; 
+  width: 100%;
+  top: 0pt;
+  left: 0pt;
+  right: 0pt;
+  z-index: 2000;
+}
+
+li {
+  float: left;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-align: center;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  
+}
+
+li a:hover {
+  background-color: #2d2a2a;
+}
+
+.headline {
+  text-align: center;
+  width: 100%;
+  display: flex;
+}
+
+.headline-image {
+  position: absolute;
+  width: 100%;
+  opacity: 0.5;
+  filter: brightness(20%);
+}
+
+.headline-text {
+  margin: auto;
+  margin-top: 15vw;
+  z-index: 1000;
+}
+
+.title {
+  font-size: 4vw;
+  color: white;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 3vw;
+  color: white;
+  font-weight: 100;
+  width: 60%;
+  margin: auto;
+}
+
+.our-team {
+  margin-top: 10%;
+  font-size: 3vw;
+  font-weight: 200;
+  color: black;
+}
+
+.members {
+  
+}
+
+.member {
+  margin-bottom: 10%;
+}
+
+.member-name {
+  font-size: 1.2vw;
+  font-weight: 200;
+}
+
+.team-member {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.member-description {
+  font-size: 0.8v;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-weight: 100;
+}
+
+.footer {
+  padding-top: 1rem;
+  color: white;
+  height:3rem;
+  width: 100%; 
+  background-color: black;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  position: fixed;
+  bottom: 0pt;
+}
+
+.footer-left {
+  width: 40%;
+  position: fixed;
+  left: 2%;
+}
+
+.footer-right {
+  width: 40%;
+  position: fixed;
+  right: 2%;
+  text-align: right;
+}
+
+.about {
+  text-align: center;
+  margin-top: 25vw;
+  font-weight: 100;
+  font-size: 5vh;
+}
+
+
+.about-text {
+  padding-top: 3.5vw;
+  margin-bottom: 40vw;
+  font-size: 2.5vh;
+  max-width: calc(min(80%, 500px));
+  margin: auto;
+  font-weight: 100;
+  text-indent: 10px;
+  text-align: center;
+  line-height: 4vh;
+}
