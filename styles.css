@@ -65,7 +65,7 @@ a{
   transition-property: background-color;
 }
 .nav-link:hover {
-  background-color: #222;
+  background-color: #1c1c1c;
 }
 
 
@@ -94,19 +94,14 @@ a{
     width: 128px;
     height: 100%;
     text-align: center;
-    transition-duration: 0.4s;
   }
   .nav-link {
     width: 128px;
     height: 100%;
     text-align: center;
     font-size: 18px;
-    transition-duration: 0.4s;
-  }
-  nav > div > a {
     transition-duration: 0.18s;
-    transition-property: color;
-    transition-timing-function: ease;
+    transition-property: background-color;
   }
   nav > div:hover {
   }
@@ -132,9 +127,6 @@ a{
   ::-webkit-scrollbar-thumb:hover {
     background:#0d0d0d;
   }
-  .nav-link{
-  transition-duration: 0.4s;
-}
 
 }
 @media (min-width:1280px) {
