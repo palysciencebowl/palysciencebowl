@@ -114,12 +114,6 @@ a{
     font-size: 3vw;
     word-spacing: 0vw;
   }
-  .homebuttons > a {
-    height: 7vw;
-    width:22vw;
-    text-align:center;
-  }
-
 }
 @media (min-width:1280px) {
   nav{
