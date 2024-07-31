@@ -44,7 +44,7 @@ function setSize() {
     font-size: 9vw;
     word-spacing: 0vw;`);
     titletextdiv.setAttribute('style', "height:16vw;text-align:center;padding-top:12vw");
-    titletext.setAttribute('style', "font-size: 9vw;");
+    titletext.setAttribute('style', "font-size: 10vw;");
     navbarspace.setAttribute('style', "height:"+navh+"px");
   }
 }
@@ -63,12 +63,12 @@ function setSize() {
   <div class="hometitle">
     <div id="navbarspace" style="height:20vw"></div>
     <div id="titletextdiv" style="height:12vw;text-align:center"> <h1 id="titletext" style="">Paly Science Bowl</h1></div>
-    <div class="homebuttons">
-      <button id="join" class="join" onclick="window.location.href = '/join'">
+    <div class="homebutton-div">
+      <button id="join" class="homebutton" onclick="window.location.href = '/join'">
         Join
       </button>
       </script>
-      <button id="contact" class="contact"  onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });">
+      <button id="contact" class="homebutton"  onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });">
         Contact
       </button>
     </div>

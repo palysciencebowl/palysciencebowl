@@ -167,7 +167,7 @@ footer{
   display:flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   position: static;
   padding-top: 3rem;
   height:5rem;
@@ -184,6 +184,7 @@ text-align:center;
 .footer-right{
 width:100%;
 text-align:center;
+height:3rem;
 }
 .footer-text{
   color: #222;
@@ -193,7 +194,7 @@ text-align:center;
   footer{
      flex-direction: row-reverse;
      align-items: center;
-     padding-top: 3rem;
+     padding-top: 2rem;
      height:4rem;
   }
   .footer-left{
@@ -212,7 +213,7 @@ text-align:center;
 
 }
 
-.homebuttons{
+.homebutton-div{
   display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -223,17 +224,12 @@ text-align:center;
   word-spacing: 0vw;
   width:100%;
 }
-.homebuttons > a {
-  height: 7vw;
-  width:100%;
-  text-align:center;
-}
 
-.join {
+.homebutton {
   background-color: #111;
   border: none;
   border-radius: 4.5vw;
-  width: 26vw;
+  width: 36vw;
   height:9vw;
   margin: 0;
   color: white;
@@ -241,21 +237,14 @@ text-align:center;
   text-align: center;
 }
 
-.contact {
-  background-color: #111;
-  border: none;
-  border-radius: 4.5vw;
-  width: 26vw;
-  height:9vw;
-  margin: 0;
-  color: white;
-  font-size: 4.5vw;
-  text-align: center;
+.homebutton{
+  transition-duration: 0s;
+  transition-property: background-color;
 }
 
 
 @media (min-width:768px) {
-  .homebuttons{
+  .homebutton-div{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -265,22 +254,8 @@ text-align:center;
     font-size: 3vw;
     word-spacing: 0vw;
   }
-  .homebuttons > a {
-    height: 7vw;
-    width:22vw;
-    text-align:center;
-  }
-  .join {
-    border: none;
-    border-radius: 2.5vw;
-    color: white;
-    width: 40%;
-    height:5vw;
-    text-align: center;
-    text-decoration: none;
-    font-size: 2vw;
-  }
-  .contact {
+  .homebutton{
+    transition-duration: 0.2s;
     border: none;
     border-radius: 2.5vw;
     color: white;
@@ -292,10 +267,7 @@ text-align:center;
   }
 }
 
-.join:hover{
-  background-color:#222;
-}
-.contact:hover{
+.homebutton:hover{
   background-color:#222;
 }
 
@@ -322,6 +294,7 @@ text-align:center;
   border: 2px solid white;
   width: 75vw;
   padding:0.5rem;
+  text-align: center;
 }
 
 .tryout-form {
@@ -350,30 +323,38 @@ text-align:center;
 }
 
 
-.member1 {
+.member-team {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  margin-top: 10vh;
+  width: 100%;
+  margin-top: 10vw;
 }
-
-.member2 {
+.member {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 100vw;
-  margin-top: 10vh;
+  width: 80rem;
+  height: 40rem;
+  margin-top: 4rem;
+  margin-top: 4rem;
 }
-
-.member-image {
-  width: 50%;
+.member:nth-child(odd){
+  flex-direction: row;
+}
+.member:nth-child(even){
+  flex-direction: row-reverse;
+}
+.member-image-div {
+  width: 45$;
   height: 100%;
-  margin-bottom: 8vh;
+}
+.member-image {
+  width: 100%;
+  height: 100%;
 }
 
 .member-text {
-  width: 80%;
+  width: 55%;
   height: 100%;
   display: flex;
   flex-direction: column;
