@@ -34,8 +34,6 @@ nav > div {
   align-content: center;
   text-align: center;
   font-size: 4.2vw;
-  transition-duration: 0s;
-  transition-property: background-color;
 }
 nav > div > a {
   align-content: center;
@@ -48,6 +46,10 @@ a{
   text-decoration:none;
 }
 
+.nav-link{
+  transition-duration: 0s;
+  transition-property: background-color;
+}
 .nav-link:hover {
   background-color: #222;
 }
@@ -110,6 +112,9 @@ a{
   ::-webkit-scrollbar-thumb:hover {
     background:#0d0d0d;
   }
+  .nav-link{
+  transition-duration: 0.4s;
+}
 
 }
 @media (min-width:1280px) {
