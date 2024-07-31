@@ -94,7 +94,6 @@ a{
     width: 128px;
     height: 100%;
     text-align: center;
-    transition-duration: 0.4s;
   }
   .nav-link {
     width: 128px;
@@ -102,11 +101,7 @@ a{
     text-align: center;
     font-size: 18px;
     transition-duration: 0.18s;
-  }
-  nav > div > a {
-    transition-duration: 0.18s;
-    transition-property: color;
-    transition-timing-function: ease;
+    transition-property: background-color;
   }
   nav > div:hover {
   }
