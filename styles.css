@@ -147,8 +147,8 @@ p, h1, h2{
 }
 
 p{font-size: 16px}
-h1{font-size:48px}
-h2{font-size:32px}
+h1{font-size:30px}
+h2{font-size:20px}
 .fullwidthtext{padding: 0px 12px 0px 12px;}
 .subtitle{padding: 20px 0px 0px 24px;}
 @media (min-width:700px) {
@@ -233,7 +233,7 @@ text-align:center;
 .join {
   background-color: red;
   border-radius: 25px;
-  width: 50%;
+  width: 80%;
   margin-bottom: 20px;
   padding: 2rem;
   color: white;
@@ -245,7 +245,7 @@ text-align:center;
 .contact {
   background-color: green; 
   border-radius: 25px;
-  width: 50%;
+  width: 80%;
   padding: 2rem;
   color: white;
   font-size: 4.5vw;
@@ -287,7 +287,7 @@ text-align:center;
 @media (min-width:768px) {
   .science-bowl {
     width: 60%;
-    margin-top: -3vw;
+    margin-top: -10vw;
   }
 }
 
