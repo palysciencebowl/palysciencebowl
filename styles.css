@@ -245,20 +245,30 @@ text-align:center;
   width: 50%;
   padding: 0.5rem;
 }
-=
+
 
 @media (min-width:768px) {
   .join {
-    background-color: red;
     border-radius: 25px;
-    width: 40%;
     margin-bottom: 0;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 6% 18%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
   }
   .contact {
-    background-color: green; 
     border-radius: 25px;
-    width: 40%;
     margin-left: 20%;
+    background-color: green; 
+    border: none;
+    color: white;
+    padding: 6% 18%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
   }
 }
 
