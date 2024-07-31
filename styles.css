@@ -465,6 +465,6 @@ height:3rem;
   color:#0c6219;
 }
 
-.button:hover {
+button:hover {
   cursor: pointer;
 }
