@@ -316,11 +316,13 @@ height:3rem;
   align-items: center;
   text-align: center;
   width: 80%;
+  margin-top: 20vh;
 }
 
 @media (min-width:768px) {
   .science-bowl {
     width: 60%;
+    margin-top: 0;
   }
 }
 
