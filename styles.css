@@ -375,16 +375,16 @@ height:3rem;
   justify-content: center;
   text-align: center;
   width: 95vw;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
 .member-image-div {
   width: 70%;
   height: 26rem;
+  margin-bottom: 5vh;
 }
 .member-image {
-  margin: 0;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -421,6 +421,7 @@ height:3rem;
   .member-image-div {
     width: 45%;
     height: 100%;
+    margin-bottom: 0;
   }
   .member-image {
     width: 100%;
