@@ -304,8 +304,9 @@ height:3rem;
 
 .tryout-form {
   margin-top: 5vw;
-  width: 75vw;
+  width: 80vw;
   height: 600px;
+  border: 0;
 }
 
 
