@@ -254,14 +254,13 @@ text-align:center;
     background-color: red;
     border: none;
     color: white;
-    padding: 4% 14%;
+    padding: 4% 11%;
     text-align: center;
     text-decoration: none;
     font-size: 2rem;
   }
   .contact {
     border-radius: 25px;
-    margin-left: 20%;
     background-color: green; 
     border: none;
     color: white;
@@ -283,7 +282,7 @@ text-align:center;
 @media (min-width:768px) {
   .science-bowl {
     width: 60%;
-    margin-top: -36vh;
+    margin-top: -8vw;
   }
 }
 
