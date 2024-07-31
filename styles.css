@@ -464,3 +464,7 @@ height:3rem;
 .tryout-date{
   color:#0c6219;
 }
+
+.button:hover {
+  cursor: pointer;
+}
