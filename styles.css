@@ -308,14 +308,14 @@ height:3rem;
 .tryout-form {
   margin-top: 5vw;
   width: 80vw;
-  height: 600px;
+  height: 90vh;
   border: 0;
 }
 
 
 @media (min-width:768px) {
   .tryout-info {
-    width: calc(min(80vw, 600px));
+    width: calc(min(80vw, 768px));
   }
 
   .tryout-form {
