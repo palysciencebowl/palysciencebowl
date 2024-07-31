@@ -153,7 +153,7 @@ nav :link, nav :visited {
 }
 
 
-p, h1, h2{
+p, h1, h2, h3{
   font-family: 'Source Sans Pro', sans-serif;
   color:#fff;
   font-weight: normal;
@@ -397,8 +397,6 @@ height:3rem;
   align-items: center;
 }
 .member-name {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   text-align: center;
 }
 .member-desc {
