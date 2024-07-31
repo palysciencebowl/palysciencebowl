@@ -300,7 +300,7 @@ height:3rem;
 }
 
 .tryout-info {
-  width: 75vw;
+  width: 80vw;
   padding:0.5rem;
   text-align: center;
 }
@@ -315,11 +315,11 @@ height:3rem;
 
 @media (min-width:768px) {
   .tryout-info {
-    width: 60vw;
+    width: calc(min(80vw, 600px));
   }
 
   .tryout-form {
-    width: 60vw;
+    width: calc(min(80vw, 600px));
   }
 
   .content {
