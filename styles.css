@@ -192,17 +192,19 @@ text-align:center;
 @media (min-width:768px) {
   footer{
      flex-direction: row-reverse;
-     align-items: bottom;
+     align-items: center;
      padding-top: 3rem;
      height:4rem;
   }
   .footer-left{
   width: 45%;
   text-align:left;
+  padding-left: 2vw;
   }
   .footer-right{
   width:55%;
   text-align:right;
+  padding-right: 2vw;
   }
   .footer-text{
     color: #222;
@@ -301,6 +303,7 @@ text-align:center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 80%;
 }
 
@@ -308,11 +311,6 @@ text-align:center;
   .science-bowl {
     width: 60%;
   }
-}
-
-p {
-  text-align: center;
-  text-indent: 8px;
 }
 
 .science-bowl-title {

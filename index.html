@@ -53,8 +53,8 @@ function setSize() {
 
 <nav id="navbar">
   <div><a href="/"> <img src="images/PSBLogo.png" style="height:100%"></a></div>
-  <div><a href="/about.html" class="nav-link">About</a></div>
-  <div><a href="/join.html" class="nav-link">Join</a></div>
+  <div><a href="/about" class="nav-link">About</a></div>
+  <div><a href="/join" class="nav-link">Join</a></div>
 </nav>
 
 <body onload="setSize()" onresize="setSize()">
@@ -64,11 +64,11 @@ function setSize() {
     <div id="navbarspace" style="height:20vw"></div>
     <div id="titletextdiv" style="height:12vw;text-align:center"> <h1 id="titletext" style="">Paly Science Bowl</h1></div>
     <div class="homebuttons">
-      <button id="join" class="join" onclick="window.location.href = 'https://palysciencebowl.vercel.app/join.html'">
+      <button id="join" class="join" onclick="window.location.href = '/join'">
         Join
       </button>
       </script>
-      <button id="contact" class="contact"  onclick="window.location.href = 'https://palysciencebowl.vercel.app/join.html'">
+      <button id="contact" class="contact"  onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });">
         Contact
       </button>
     </div>
