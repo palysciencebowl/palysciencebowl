@@ -135,20 +135,20 @@ p, h1, h2{
 a:hover{
   color:#0c6219;
 }
-p{font-size: 16px}
+p, html{font-size: 16px}
 h1{font-size:6.25vw}
 h2{font-size:36px}
 .fullwidthtext{padding: 0px 12px 0px 12px;}
 .subtitle{padding: 20px 0px 0px 24px;}
 @media (min-width:700px) {
-  p{font-size: 20px}
+  p, html{font-size: 20px}
   h1{font-size:48px}
   h2{font-size:40px}
   .fullwidthtext{padding: 0px 24px 0px 6px;}
   .subtitle{padding: 2vw 0px 0px 24px;}
 }
 @media (min-width:1280px) {
-  p{font-size: 24px}
+  p, html{font-size: 24px}
   h1{font-size:3.75vw}
   h2{font-size:60px}
 }
@@ -332,18 +332,14 @@ height:3rem;
 }
 .member {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 80rem;
-  height: 40rem;
+  width: 90vw;
+  height: 100rem;
   margin-top: 4rem;
   margin-top: 4rem;
 }
-.member:nth-child(odd){
-  flex-direction: row;
-}
-.member:nth-child(even){
-  flex-direction: row-reverse;
-}
+
 .member-image-div {
   width: 45$;
   height: 100%;
@@ -371,19 +367,15 @@ height:3rem;
 }
 
 @media (min-width:768px) {
-  .member1 {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 65vw;
-    margin-top: 20vh;
+  .member {
+    width: 38rem;
+    height: 30rem;
   }
-  .member2 {
+  .member:nth-child(odd){
+    flex-direction: row;
+  }
+  .member:nth-child(even){
     flex-direction: row-reverse;
-    align-items: flex-start;
-    width: 65vw;
-    justify-content: space-between;
-    margin-top: 20vh;
   }
 
   .member-image {
