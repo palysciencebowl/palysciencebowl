@@ -263,15 +263,15 @@ height:3rem;
   font-size: 6vw;
   word-spacing: 0vw;
   width:100%;
-  margin-top: 10vh;
+  margin-top: 8vh;
 }
 
 .homebutton {
   background-color: #DDDDDD;
   border: none;
-  border-radius: 3vw;
+  border-radius: 4vw;
   width: 30vw;
-  height:40%;
+  height:12vw;
   color: #0d0d0d;
   font-size: 4.5vw;
   text-align: center;
