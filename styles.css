@@ -65,7 +65,7 @@ a{
   transition-property: background-color;
 }
 .nav-link:hover {
-  background-color: #f0f;
+  background-color: #1c1c1c;
 }
 
 
