@@ -254,10 +254,10 @@ text-align:center;
     background-color: red;
     border: none;
     color: white;
-    padding: 6% 18%;
+    padding: 4% 14%;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 2rem;
   }
   .contact {
     border-radius: 25px;
@@ -265,10 +265,10 @@ text-align:center;
     background-color: green; 
     border: none;
     color: white;
-    padding: 6% 18%;
+    padding: 4% 14%;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 2rem;
   }
 }
 
