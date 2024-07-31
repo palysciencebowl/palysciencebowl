@@ -258,16 +258,15 @@ text-align:center;
     width: 40%;
     text-align: center;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5vw;
   }
   .contact {
     background-color: green; 
     border: none;
     color: white;
-    padding: 4% 14%;
     text-align: center;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5vw;
     width: 40%;
 
   }
