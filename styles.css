@@ -45,6 +45,8 @@ nav > div {
   transition-duration: 0s;
   transition-property: background-color;
   background-color: #0d0d0d;
+  color: #FFFFFF;
+  border: 0;
 }
 
 nav > div > a {
