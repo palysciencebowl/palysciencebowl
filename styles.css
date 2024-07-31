@@ -287,7 +287,7 @@ text-align:center;
 @media (min-width:768px) {
   .science-bowl {
     width: 60%;
-    margin-top: -10vw;
+    margin-top: -20vw;
   }
 }
 
@@ -338,7 +338,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90vw;
+  width: 100vw;
   margin-top: 10vh;
 }
 
@@ -346,18 +346,18 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90vw;
+  width: 100vw;
   margin-top: 10vh;
 }
 
 .member-image {
-  width: 40%;
+  width: 50%;
   height: 100%;
   margin-bottom: 8vh;
 }
 
 .member-text {
-  width: 50%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
