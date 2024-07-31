@@ -29,21 +29,26 @@ function setSize() {
     }
   } else {
 
-
   }
 }
 </script>
 </head>
 
-<nav>
-  <div><a href="/"> <img src="images/PSBLogo.png" style="height:100%"></a></div>
-  <div><a href="/join">Join</a></div>
-  <div><a href="/about">About</a></div>
-</nav>
+  <nav>
+    <div><a href="/"> <img src="images/PSBLogo.png" style="height:100%"></a></div>
+    <div><a href="/" class="nav-link">Home</a></div>
+    <div><a href="/about.html" class="nav-link">About</a></div>
+    <div><a href="/join.html" class="nav-link">Join</a></div>
+  </nav>
 
 <body onload="setSize()" onresize="setSize()">
-
-<p>Join information!</p>
+  <div class="content">
+    <div class="tryout-info">
+      <p>Tryouts will be held on <b>DATE</b>. You will choose up to two tryout tests out the following subjects: Math, Physics, Chemistry, Biology, and Earth Science.</p>
+    </div>
+    <iframe src="" class="tryout-form" title="Sign-up Form"></iframe>
+  </div>
+</body>
 
 <footer>
   <div class="footer-right">
