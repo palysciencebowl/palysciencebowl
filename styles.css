@@ -390,7 +390,7 @@ height:3rem;
   height: 100%;
 }
 .member-text {
-  width: 95%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -400,6 +400,7 @@ height:3rem;
   text-align: center;
 }
 .member-desc {
+  margin-top: 4vh;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -436,6 +437,7 @@ height:3rem;
     text-align: center;
   }
   .member-desc {
+    margin-top: 0;
     padding:0;
   }
 }
