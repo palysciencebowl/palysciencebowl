@@ -242,13 +242,6 @@ text-align:center;
   width: 50%;
 }
 
-.join > a {
-  color: white;
-}
-
-.contact > a {
-  color: white;
-}
 
 @media (min-width:768px) {
   .join {
