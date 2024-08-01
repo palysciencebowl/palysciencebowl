@@ -43,14 +43,15 @@ nav > div {
   height: 100%;
   align-content: center;
   text-align: center;
-  font-size: 4.2vw;
   transition-duration: 0s;
   transition-property: background-color;
   background-color: #0d0d0d;
   color: #FFFFFF;
   border: 0;
 }
-
+.nav-link-text {
+  font-size: 4.2vw;
+}
 nav > div > a {
   align-content: center;
 }
@@ -104,14 +105,11 @@ a{
     width: 128px;
     height: 100%;
     text-align: center;
-    font-size: 18px;
     transition-duration: 0.18s;
     transition-property: background-color;
   }
-  nav > div:hover {
-  }
-  nav > div > a {
-    text-align: center;
+  .nav-link-text {
+    font-size: 18px;
   }
   a{
     text-decoration:none;
@@ -149,6 +147,8 @@ a{
   .nav-link {
     width: 10vw;
     text-align: center;
+  }
+  .nav-link-text {
     font-size: 1.40625vw;
   }
   ::-webkit-scrollbar {
