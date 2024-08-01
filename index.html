@@ -7,49 +7,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-</style>
-
-<script>
-addEventListener("resize", (event) => {});
-
-onresize = (event) => {};
-
-function setSize() {
-  var w = window.innerWidth;
-  var h = window.innerHeight;
-  var hometitle = document.querySelector('.hometitle');
-  var titletextdiv = document.getElementById('titletextdiv');
-  var titletext = document.getElementById('titletext');
-  var navbarspace = document.getElementById('navbarspace');
-  var navh = document.getElementById('navbar').offsetHeight;
-  if(w>=768){
-    hometitle.setAttribute('style', `display:flex;
-    flex-direction: column;
-    height: 56vw;
-    align-items: center;
-    color:#fff;
-    font-size: 7.5vw;
-    word-spacing: 0vw;`);
-    titletextdiv.setAttribute('style', "height:10vw;text-align:center;padding-top:10vw");
-    titletext.setAttribute('style', "font-size: 6vw;");
-    navbarspace.setAttribute('style', "height:"+navh+"px");
-  } else {
-    hometitle.setAttribute('style', `display:flex;
-    flex-direction: column;
-    height: 90vw;
-    align-items: center;
-    color:#fff;
-    font-size: 9vw;
-    word-spacing: 0vw;`);
-    titletextdiv.setAttribute('style', "height:15vw;text-align:center;padding-top:18vw");
-    titletext.setAttribute('style', "font-size: 11vw;");
-    navbarspace.setAttribute('style', "height:"+navh+"px");
-  }
-}
-</script>
 </head>
 
+<body>
 <nav id="navbar">
   <div><a href="/"> <img src="images/PSBClear.png" style="height:100%"></a></div>
   <button class="nav-link" onclick="window.location.href = '/index.html'">
@@ -63,15 +23,50 @@ function setSize() {
   </button>
 </nav>
 
-<body onload="setSize()" onresize="setSize()">
-
 <div class="container">
-
-
-<div class="content">
-  <div class="hometitle">
-    <div id="navbarspace" style="height:20vw"></div>
-    <div id="titletextdiv" style="height:12vw;text-align:center"> <h1 id="titletext" style="">Paly Science Bowl</h1></div>
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  function plusSlide(n) {
+    showSlides(slideIndex += n);
+  }
+  function showSlides(n) {
+    const slides = document.getElementsByClassName("slide");
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    if (slides[slideIndex - 1]) {
+      slides[slideIndex - 1].style.display = "block";
+    }
+  }
+  function prevSlide() {
+    plusSlide(-1);
+  }
+  function nextSlide() {
+    plusSlide(1);
+  }
+  setInterval(() => {
+    nextSlide();
+  }, 8000);
+</script>
+<div class="slideshow-container">
+  <div class="slide">
+    <img src="images/image1.jpg" alt="Image 1">
+  </div>
+  <div class="slide">
+    <img src="images/image2.png" alt="Image 2">
+  </div>
+  <div class="slide">
+    <img src="images/image3.jpg" alt="Image 3">
+  </div>
+  <a class="prev" onclick="prevSlide()">&#10094;</a>
+  <a class="next" onclick="nextSlide()">&#10095;</a>
+  <div class="title">
+    <div id="titletextdiv";text-align:center>
+      <h1 id="titletext">Paly Science Bowl</h1>
+    </div>
     <div class="homebutton-div">
       <button id="join" class="homebutton" onclick="window.location.href = '/join'">
         Join
@@ -82,9 +77,12 @@ function setSize() {
       </button>
     </div>
   </div>
+</div>
+
+<div class="content">
   <div class="science-bowl">
     <div class="subtitle">
-      <h2 >Science Bowl</h2>
+      <h2>National Science Bowl ® (NSB)</h2>
     </div>
     <div class="science-bowl-text" id="science-bowl-text">
       <p>

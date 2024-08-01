@@ -2,7 +2,9 @@ body{
   overflow-y: scroll;
   background-color:#0d0d0d;
   padding:0;
+  padding-top: 14vw;
   margin:0;
+  width: 100vw;
   font-family: 'Roboto', sans-serif;
 }
 .content {
@@ -22,7 +24,7 @@ nav {
   width:100vw;
   align-items: center;
   border-bottom:1px solid rgb(255,255,255,1);
-
+  z-index: 10;
 }
 nav{
   transition-duration: 0s;
@@ -70,6 +72,9 @@ a{
 
 
 @media (min-width:768px) {
+  body {
+    padding-top: 64px;
+  }
   nav {
     position:fixed;top:0;right:0;
     margin: 0 auto;
@@ -130,6 +135,9 @@ a{
 
 }
 @media (min-width:1280px) {
+  body {
+    padding-top: 5vw;
+  }
   nav{
     height:5vw;
   }
@@ -163,7 +171,7 @@ p, h1, h2, h3{
 
 
 p, html{font-size: 16px}
-h1{font-size:12.5vw}
+h1{font-size:6vw}
 h2{font-size:36px}
 h3{font-size:24px}
 .fullwidthtext{padding: 0px 12px 0px 12px;}
@@ -187,10 +195,7 @@ div{
   margin:0;padding:0;
 }
 
-.hometitle{
-}
-.hometitle > div {
-}
+
 
 
 footer{
@@ -260,7 +265,6 @@ height:3rem;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 30vw;
   align-items: center;
   color:#fff;
   font-size: 6vw;
@@ -278,6 +282,7 @@ height:3rem;
   color: #0d0d0d;
   font-size: 4.5vw;
   text-align: center;
+  margin-top: 5vw;
 }
 
 .homebutton{
@@ -467,3 +472,79 @@ button:hover {
   cursor: pointer;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.slideshow-container {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  overflow: hidden;
+}
+
+.slide {
+  animation-name: fade;
+  animation-duration: 0.7s;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slide > img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  filter: brightness(0.2);
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transform: translateX(-50%);
+}
