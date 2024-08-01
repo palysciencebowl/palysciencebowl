@@ -471,6 +471,7 @@ button:hover {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
+  top: 0;
   margin: auto;
 }
 
