@@ -369,6 +369,7 @@ height:3rem;
   width: 80vw;
   height: 90vh;
   border: 0;
+  filter: invert(1) hue-rotate(180deg);
 }
 .form-frame{
   margin: 0;
