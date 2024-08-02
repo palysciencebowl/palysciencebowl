@@ -7,44 +7,6 @@
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script>
-  let slideIndex = 1;
-  showSlides(slideIndex);
-  function plusSlide(n) {
-    showSlides(slideIndex += n);
-  }
-  function showSlides(n) {
-    const slides = document.getElementsByClassName("slide");
-    if (n > slides.length) { slideIndex = 1; }
-    if (n < 1) { slideIndex = slides.length; }
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    if (slides[slideIndex - 1]) {
-      slides[slideIndex - 1].style.display = "block";
-    }
-    setImageQuality();
-  }
-  function prevSlide() {
-    plusSlide(-1);
-  }
-  function nextSlide() {
-    plusSlide(1);
-  }
-  function setImageQuality(){
-    var w = window.innerWidth;
-    var image1 = document.getElementById("image1");
-    if(w < 1280){
-      image1.setAttribute("src", "images/image1.jpg")
-    } else {
-      image1.setAttribute("src", "images/image1-high.jpg")
-    }
-  }
-  setInterval(() => {
-    nextSlide();
-  }, 8000);
-</script>
 </head>
 
 <body onload="showSlides(1)" onresize="setImageQuality()">
@@ -110,6 +72,43 @@
     <p class="footer-text">&copy; Copyright 2024 Paly Science Bowl</p>
   </div>
 </footer>
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  function plusSlide(n) {
+    showSlides(slideIndex += n);
+  }
+  function showSlides(n) {
+    const slides = document.getElementsByClassName("slide");
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    if (slides[slideIndex - 1]) {
+      slides[slideIndex - 1].style.display = "block";
+    }
+    setImageQuality();
+  }
+  function prevSlide() {
+    plusSlide(-1);
+  }
+  function nextSlide() {
+    plusSlide(1);
+  }
+  function setImageQuality(){
+    var w = window.innerWidth;
+    var image1 = document.getElementById("image1");
+    if(w < 1280){
+      image1.setAttribute("src", "images/image1.jpg");
+    } else {
+      image1.setAttribute("src", "images/image1-high.jpg");
+    }
+  }
+  setInterval(() => {
+    nextSlide();
+  }, 8000);
+</script>
 </body>
 
 </html>
