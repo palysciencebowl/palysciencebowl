@@ -2,28 +2,12 @@
 <html lang="en-US">
 <head>
 <title>Paly Science Bowl</title>
+<base href="file:///C:/Users/Forrest/Desktop/Extra/Scibowl/Website_SciBowl/" target="_self">
 <link rel="icon" type="image/x-icon" href="images/PSBFavicon.png">
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
-
-<body>
-<nav id="navbar">
-  <div><a href="/"> <img src="images/PSBClear.png" style="height:100%"></a></div>
-  <a class="nav-link" href="/">
-    <div class="nav-link-text">Home</div>
-  </a>
-  <a class="nav-link" href="/about">
-    <div class="nav-link-text">About</div>
-  </a>
-  <a class="nav-link" href="/join">
-    <div class="nav-link-text">Join</div>
-  </a>
-</nav>
-
-<div class="container">
 <script>
   let slideIndex = 1;
   showSlides(slideIndex);
@@ -40,6 +24,7 @@
     if (slides[slideIndex - 1]) {
       slides[slideIndex - 1].style.display = "block";
     }
+    setImageQuality();
   }
   function prevSlide() {
     plusSlide(-1);
@@ -47,13 +32,42 @@
   function nextSlide() {
     plusSlide(1);
   }
+  function setImageQuality(){
+    var w = window.innerWidth;
+    console.log("hi, I tried to set the image quality");
+    var image1 = document.getElementById("image1");
+    console.log(image1);
+    if(w < 1280){
+      image1.setAttribute("src", "images/image1.jpg")
+    } else {
+      image1.setAttribute("src", "images/image1-high.jpg")
+    }
+    console.log("hi, I tried to set the image quality");
+  }
   setInterval(() => {
     nextSlide();
   }, 8000);
 </script>
+</head>
+
+<body onload="showSlides(1)" onresize="setImageQuality()">
+  <nav id="navbar">
+    <div><a href="/"> <img src="images/PSBClear.png" style="height:100%"></a></div>
+    <a class="nav-link" href="/">
+      <div class="nav-link-text">Home</div>
+    </a>
+    <a class="nav-link" href="/about">
+      <div class="nav-link-text">About</div>
+    </a>
+    <a class="nav-link" href="/join">
+      <div class="nav-link-text">Join</div>
+    </a>
+  </nav>
+
+<div class="container">
 <div class="slideshow-container">
   <div class="slide">
-    <img src="images/image1.jpg" alt="Image 1">
+    <img id="image1" src="images/image1.jpg" alt="Image 1">
   </div>
   <div class="slide">
     <img src="images/image2.png" alt="Image 2">
@@ -92,6 +106,18 @@
 <br><br>
         Each year, we compete in one of the 65 high school regional Science Bowl tournaments at SLAC lab. The next step is NSB finals, which is hosted in Washington D.C. every May.
       </p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="content">
+  <div class="our-mission">
+    <div class="subtitle">
+      <h2>Our Mission</h2>
+    </div>
+    <div class="our-mission-text" id="our-mission-text">
+      <p>
+        Paly SciBowl is committed to increasing access to STEM opportunities through preparation for competitions and building a tight-knit community of aspiring scientists and mathmaticians. We are proud to be student led and we believe that working together to suceed in SciBowl inspires our collective passion for STEM.
     </div>
   </div>
 </div>
