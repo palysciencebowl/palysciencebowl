@@ -377,6 +377,10 @@ height:3rem;
 }
 
 @media (min-width:768px) {
+  .tryout-info {
+    width: calc(min(80vw, 768px));
+  }
+
   .tryout-form {
     width: calc(min(80vw, 600px));
   }
