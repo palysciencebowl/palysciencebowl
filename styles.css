@@ -360,10 +360,13 @@ height:3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   width: 80%;
   padding-top: 4vw;
   padding-bottom: 2vw;
+}
+.our-mission-text > p {
+  text-align: center;
+  padding: 0 1rem 0 1rem;
 }
 
 @media (min-width:768px) {
@@ -380,6 +383,9 @@ height:3rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   text-align: center;
+}
+.tryout-info-date-text{
+  font-size: 1.5rem;
 }
 
 .tryout-form {
@@ -514,8 +520,8 @@ height:3rem;
 }
 
 .pagetitle{
-  padding-top: 7vw;
-  padding-bottom: 7vw;
+  padding-top: 6vw;
+  padding-bottom: 6vw;
 }
 @media (min-width:768px) {
   .pagetitle{
@@ -624,4 +630,16 @@ button:hover {
   .title{
     width:48vw;
   }
+}
+
+.why-join{
+  width: min(30rem, 90vw);
+}
+
+.quote{
+  background-color: #222;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.quote-author{
+  padding: 0.2rem 0 0 1rem;
 }
