@@ -377,7 +377,9 @@ height:3rem;
   }
 }
 
-
+.tryout-info {
+  text-align: center;
+}
 .tryout-info-date-text{
   font-size: 1.5rem;
 }
