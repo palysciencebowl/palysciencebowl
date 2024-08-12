@@ -632,6 +632,10 @@ button:hover {
   }
 }
 
+.section {
+  width: min(50rem, 90vw);
+}
+
 .why-join{
   width: min(30rem, 90vw);
 }
