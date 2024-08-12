@@ -379,7 +379,8 @@ height:3rem;
 
 .tryout-info {
   text-align: center;
-  width: 80%;
+  width: 100%;
+  margin-auto;
 }
 .tryout-info-date-text{
   font-size: 1.5rem;
