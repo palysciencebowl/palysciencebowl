@@ -379,6 +379,7 @@ height:3rem;
 
 .tryout-info {
   text-align: center;
+  width: 80%;
 }
 .tryout-info-date-text{
   font-size: 1.5rem;
@@ -397,10 +398,6 @@ height:3rem;
 
 
 @media (min-width:768px) {
-  .tryout-info {
-    width: calc(min(80vw, 768px));
-  }
-
   .tryout-form {
     width: calc(min(80vw, 600px));
   }
