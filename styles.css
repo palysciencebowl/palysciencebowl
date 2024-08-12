@@ -387,7 +387,7 @@ height:3rem;
 }
 
 .tryout-form {
-  margin-top: 0vw;
+  margin-top: 3vw;
   width: 80vw;
   height: 90vh;
   border: 0;
@@ -617,7 +617,7 @@ button:hover {
 }
 
 .section {
-  width: 55%;
+  width: 85%;
   margin: auto;
 }
 
@@ -626,7 +626,7 @@ button:hover {
     width:580px;
   }
   .section {
-    width: 85%;
+    width: 55%;
     margin: auto;
   }
 }
