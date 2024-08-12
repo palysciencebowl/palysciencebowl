@@ -377,13 +377,7 @@ height:3rem;
   }
 }
 
-.tryout-info {
-  width: 80vw;
-  padding:0;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  text-align: center;
-}
+
 .tryout-info-date-text{
   font-size: 1.5rem;
 }
