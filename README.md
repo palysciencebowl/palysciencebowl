@@ -18,6 +18,5 @@ Here are some ideas to get you started:
 name: Paly SciBowl
 slug: palysciencebowl
 description: Palo Alto High School Science Bowl website
-deployUrl: https://palysciencebowl.vercel.app/
-
+deployUrl: https://palysciencebowl-539a4.web.app/
 # Paly SciBowl
