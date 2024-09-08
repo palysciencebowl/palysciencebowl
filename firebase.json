@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "palysciencebowl",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
