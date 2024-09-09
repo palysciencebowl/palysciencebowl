@@ -1,6 +1,6 @@
 body{
   overflow-y: scroll;
-  background-color:#0d0d0d;
+  background-color:#212121;
   padding:0;
   padding-top: 14vw;
   margin:0;
@@ -17,7 +17,7 @@ body{
 nav {
   position:fixed;top:0;right:0;
   margin: 0 auto;
-  background-color: #0d0d0d;
+  background-color: #181818;
   display:flex;
   flex-direction: row;
   height: 14vw;
@@ -45,8 +45,7 @@ nav > div {
   text-align: center;
   transition-duration: 0s;
   transition-property: background-color;
-  background-color: #0d0d0d;
-  color: #FFFFFF;
+  color: #fff;
   border: 0;
 }
 .nav-link-text {
@@ -68,7 +67,7 @@ a{
   transition-property: background-color;
 }
 .nav-link:hover {
-  background-color: #1c1c1c;
+  background-color: #212121;
 }
 
 
@@ -129,7 +128,7 @@ a{
     background:#666;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background:#0d0d0d;
+    background:#212121;
   }
 
 }
@@ -158,13 +157,13 @@ a{
 
 }
 nav :link, nav :visited {
-  color:#fff;
+  color:#ECECEC;
 }
 
 
 p, h1, h2, h3{
   font-family: 'Source Sans Pro', sans-serif;
-  color:#fff;
+  color:#ECECEC;
   font-weight: normal;
   padding:0;
   margin:0;
@@ -214,7 +213,6 @@ footer{
   padding-top: 3rem;
   height:5rem;
   width: 100%;
-  background-color: #0d0d0d;
   color: #888;
   bottom: 0;
 }
@@ -229,7 +227,7 @@ text-align:center;
 height:3rem;
 }
 .footer-right > p > a{
-  color:#fff;
+  color:#ECECEC;
   transition-duration: 0s;
   transition-property: color;
   transition-timing-function: ease;
@@ -273,7 +271,7 @@ height:3rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color:#fff;
+  color:#ECECEC;
   font-size: 6vw;
   word-spacing: 0vw;
   width:100%;
@@ -281,12 +279,12 @@ height:3rem;
 }
 
 .homebutton {
-  background-color: #DDDDDD;
+  background-color: #ECECEC;
   border: none;
   border-radius: 4.5vw;
   width: 32vw;
   height: min(11.5vw,11.5vh);
-  color: #0d0d0d;
+  color: #212121;
   font-size: 4.5vw;
   text-align: center;
   margin-top: min(5vw,5vh);
@@ -305,7 +303,6 @@ height:3rem;
     justify-content: space-between;
     height: 60px;
     align-items: center;
-    color:#fff;
     font-size: 3vw;
     word-spacing: 0vw;
     margin-top: 16px;
